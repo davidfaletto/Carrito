@@ -1,0 +1,13 @@
+$informe: (
+    padding:2%,
+    border: 5% 2%,
+    color: $blanco,
+    modo: flex,                  
+    responsive: column wrap,
+    imagenFondo: linear-gradient(to bottom, #000000, #5a5555, #000000)   
+);
+
+@mixin estiloGeneral ($tamanoLetra, $alineacion){
+    font-size: $tamanoLetra;
+    text-align: $alineacion; 
+}

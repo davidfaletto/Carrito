@@ -1,0 +1,59 @@
+//Area Central Principal Titulo, subtitulo e Imagenes
+.informe{
+        padding: map-get($informe, padding);
+        border-radius: map-get($informe, bordes);
+        color: map-get($informe, color);
+        display: map-get($informe, modo);
+        flex-flow: map-get($informe, responsive);
+        background-image: map-get($informe, imagenFondo);
+    
+    p{  
+        @include estiloGeneral(20px, center);
+        color: $blanco;
+    }
+    h1{
+        @include estiloGeneral(40px, center);
+        padding: 2%;
+    }
+    h2{
+        @include estiloGeneral(35px, center);
+        border:1px solid $negro;
+        border-radius: 10px;
+    }
+}
+.imagenes{
+    img{            //Imagenes con efecto zoom del index (dentro de las Tarjetas)
+    padding: 3%;
+    width:80%;
+    transition: all 1s;
+    &:hover{
+        width: 85%;
+        }
+    }
+    .card{          //Tarjetas del Index
+    background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
+    display: flex;
+    text-align: center;
+    align-items:center;
+    &:hover{
+        background-image: linear-gradient(to bottom, #5a5a5a, #000000, #5a5a5a);
+        }
+        button{
+        color: $blanco;    
+        background-color: $negro;
+        border: 1px solid $blanco;
+            &:hover{
+            background-color: #1f1c1c;
+            border: none;
+            }
+        }    
+    }
+}
+
+.btn-carro{
+    background-color: #000000;
+    border: none;
+    .cont{
+        color: $blanco;
+    }
+}

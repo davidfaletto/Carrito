@@ -1,0 +1,29 @@
+//Pagina de Contacto
+legend{                             /* Estilo al texto relacionado con cada campo del formulario */
+    text-align: center;
+    color: $blanco;
+}
+fieldset{                           /* Estilo para el campo del formulario */
+    border-radius: 2em;
+    padding: 3rem;
+    background-image: linear-gradient(to top, #000000, #363131, #000000);
+}
+.formularioDeContacto{              /* Contenedor del Formulario */
+    width: 100%;
+    color: $blanco;
+}
+.botones{
+    .boton{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.listaDePrecios{                /* tabla de precios */
+    text-align: center;
+    padding: 5rem;
+    table{
+    background-color: $gris;
+    color: $menuCatColor;
+    }
+}

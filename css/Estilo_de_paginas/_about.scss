@@ -1,0 +1,14 @@
+//Pagina Acerca de Nosotros
+.about{                             /* Estilo de la Pagina Acerca de Nosotros */
+    @extend .informe;               //extiendo las propiedades de la pagina informe
+    border: 3px solid rgb(56, 55, 53);
+    border-radius: 15px;
+    transition: all 1s;
+    &:hover{
+        width: 80%;
+       }
+       p{
+        font-size: 30px;
+       }
+    }
+    
