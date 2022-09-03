@@ -1,5 +1,5 @@
 const productoCatalogoHTML = (producto) =>{             //le paso un producto del arreglo productos
-    return `<div class="card" style="width: 33rem;">             
+    return `<div class="card" style="width: 30rem;">             
                   <img src="${producto.img}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">${producto.nombre}</h5>
