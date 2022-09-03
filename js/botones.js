@@ -49,29 +49,10 @@ const botonesCarrito = () =>{
 const vaciarCarrito = () =>{
   const vaciar = document.getElementById("vaciar-carrito");
   vaciar.addEventListener("click",() =>{
-    carrito.length = 0;
-    sumadorCarrito = 0;
-    mostrarCarrito();
     notificacionVaciar();
-    localStorage.setItem("cantidad", sumadorCarrito);
-    actualizarCantidad(localStorage.getItem("cantidad"));
-    localStorage.removeItem("carrito");
+    mostrarCarrito();
     
-  })
-}
-
-const actualizarCantidad = (cantidad) =>{
-  const mostrarNumero = document.getElementById("contador-carrito");
-  mostrarNumero.innerText = cantidad;
-}
-
-const notificacion = () =>{
-  Swal.fire({
-    position: 'top-end',
-    icon: 'success',
-    title: 'Producto agregado al carrito',
-    showConfirmButton: false,
-    timer: 500
+    
   })
 }
 
@@ -91,6 +72,28 @@ const notificacionVaciar = () =>{
         'Sigue buscando, algo te va a gustar',
         'success'
       )
+      carrito.length = 0;
+      sumadorCarrito = 0;
+      localStorage.setItem("cantidad", sumadorCarrito);
+      actualizarCantidad(localStorage.getItem("cantidad"));
+      localStorage.removeItem("carrito");
+      mostrarCarrito();
     }
   })
 }
+
+const actualizarCantidad = (cantidad) =>{
+  const mostrarNumero = document.getElementById("contador-carrito");
+  mostrarNumero.innerText = cantidad;
+}
+
+const notificacion = () =>{
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Producto agregado al carrito',
+    showConfirmButton: false,
+    timer: 500
+  })
+}
+
