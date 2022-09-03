@@ -12,12 +12,12 @@ const mostrarCatalogo = () =>{
     const nodoCarrito = document.getElementById("carrito");
     const nodoPrecio = document.getElementById("precioTotal");
 
-    let carritoHTML = JSON.parse(localStorage.getItem("carrito"));
+    let item = JSON.parse(localStorage.getItem("carrito"));
     let precio = 0;
-
-    for (const producto of carrito){
-      carritoHTML += productoCarritoHTML(producto);
-      precio += producto.precio;
+    let carritoHTML="";
+    for (item of carrito){
+      carritoHTML += productoCarritoHTML(item);
+      precio += item.precio;
     }
     let precioTotal = precio;
     localStorage.setItem("precioTotal",precioTotal);
