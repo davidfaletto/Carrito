@@ -51,8 +51,6 @@ const vaciarCarrito = () =>{
   vaciar.addEventListener("click",() =>{
     notificacionVaciar();
     mostrarCarrito();
-    
-    
   })
 }
 
