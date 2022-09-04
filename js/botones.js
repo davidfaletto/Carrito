@@ -1,7 +1,10 @@
 
 const botonesCatalogo = () =>{
-    productos.forEach((producto) => {
-        const botonId = `btn-catalogo-${producto.id}`;
+  fetch("/js/api.json")
+  .then((response) => response.json())
+  .then((datos) => {
+    datos.forEach(producto => {
+      const botonId = `btn-catalogo-${producto.id}`;
         const botonNodo = document.getElementById(botonId);
         botonNodo.addEventListener("click", () =>{
         const productoAlCarrito = {
@@ -21,9 +24,11 @@ const botonesCatalogo = () =>{
 
             actualizarCantidad(localStorage.getItem("cantidad"));
             notificacion();
-            })
-         }
-        );
+          })
+        }
+      );    
+    }
+  );
 }
 
 
