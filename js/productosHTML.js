@@ -12,7 +12,7 @@ const productoCatalogoHTML = (producto) =>{             //le paso un producto de
   
   
   const productoCarritoHTML  = (producto) =>{                       //como se vera el carrito de compras en html con las propiedades del objeto que tomamos
-    return `<div class="card" style="width: 13rem;">
+    return `<div class="card" style="width: 10rem;">
                       <div class="card-body">
                         <h5 class="card-title">${producto.nombre}</h5>
                         <p class="card-text">Precio: $${producto.precio}</p>

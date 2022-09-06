@@ -11,6 +11,12 @@
   padding: 1rem;
   background-color: #000000;
 }
+.menuInicio .contador {
+  color: #dbd7d7;
+}
+.menuInicio .contador:hover {
+  text-decoration: underline;
+}
 .menuInicio a {
   margin-left: 2rem;
 }
@@ -35,6 +41,38 @@
 .menuCategorias li:hover {
   background-color: #000000;
   color: #ffffff;
+}
+
+.myModal-header {
+  padding: 6px 10px 6px 20px;
+  background-color: #dbd7d7;
+  border: 0px;
+  height: 60px;
+}
+
+.myModal-body {
+  padding: 5rem;
+  background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+.myModal-body #vaciar-carrito {
+  margin-top: 2rem;
+  background-color: #000000;
+  border-color: #ffffff;
+}
+.myModal-body .card {
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  margin: 1px;
+}
+
+.myModal-footer #cerrar {
+  background-color: rgb(100, 81, 80);
+}
+.myModal-footer #comprar {
+  background-color: blueviolet;
 }
 
 .informe, .about {

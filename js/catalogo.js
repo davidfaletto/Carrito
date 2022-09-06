@@ -14,10 +14,6 @@ const buscarProductos = () =>{
     });
 };
 
-
-
-
-
   
 const mostrarCarrito = ()=>{
   const nodoCarrito = document.getElementById("carrito");
